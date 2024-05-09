@@ -1,0 +1,136 @@
+.contact {
+    background-image: url(../../img/pattern.png);
+    background-size: cover;
+    background-color: var(--cart-color);
+    margin-top: 70px;
+    animation: moving 30s linear infinite ;;
+    overflow: auto;
+    justify-content: center;
+
+    h3 {
+        
+        font-family:boldd;
+        margin-bottom: 40px;
+    }
+    form{
+        margin: auto;
+    }
+    .map {
+        width: 80%;
+        margin-top: 50px !important;
+        overflow: hidden;
+        border-radius: 15px;
+        border: 1px solid #742c2b49;
+        margin: auto;
+
+        img {
+            transform: scale(1);
+            transition: .3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .map:hover {
+        box-shadow: #d2ccc0 3px 3px 3px 3px
+    }
+    label{
+        color: var(--dark-color);
+        font-family: boldd;
+        font-size: 20px;
+    }
+   
+    .form-control {
+        padding: 0.5rem 0.75rem;
+        width: 90%;
+        box-shadow: #d2ccc0 3px 3px 3px 3px;
+    }
+
+    #exampleFormControlTextarea1 {
+        border-radius: 20px 5px;
+
+    }
+
+    .form-control:focus {
+        box-shadow: #742c2b 3px 3px 3px 3px;
+    }
+
+    .botn {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    button {
+        padding: 5px 42px;
+        background-color: var(--main-color);
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: .5s;
+    }
+
+
+    button:hover {
+        transform: scale(1.2);
+        box-shadow: #d2ccc0 3px 3px 3px 3px;
+    }
+
+    .phone-num {
+        align-items: center;
+        display: flex;
+
+        .num {
+            p {
+                color: var(--dark-color);
+                font-family: boldd;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 4px;
+
+            }
+
+
+        }
+    }
+
+    .social-media {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 40px;
+
+        }
+
+        img:hover {
+            transform: scale(1.2);
+            box-shadow: #742c2b 3px 3px 3px 3px;
+            border-radius: 50%;
+
+        }
+    }
+
+
+}
+
+
+@keyframes moving {
+    0% {
+      background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-x: 2000px;
+    }
+  }

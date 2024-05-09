@@ -1,0 +1,134 @@
+.who {
+    background-color: var(--cart-color);
+    position: relative;
+    margin-top: 50px;
+    background-image: url(../../../img/pattern.png);
+    animation: moving 30s linear infinite ;;
+
+    h3 {
+        
+        font-size: 30px;
+        color: var(--main-color);
+        font-family: boldd;
+    }
+
+    p {
+       
+        font-size: 20px;
+        font-family:mediam;
+      
+    }
+
+    .Advantge-txt {
+        color: var(--main-color);
+       font-family: boldd;
+        font-size: 25px;
+    }
+
+    .txt-content {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    @media (max-width:890px) {
+        .logo {
+            display: none;
+        }
+    }
+
+    // start-oursee 
+    .ourSee {
+        margin-top: 15px;
+
+        .seen {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 22px;
+                color: var(--secondery-color);
+                font-family: boldd;
+                margin: 0 !important;
+
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                animation: 8s  bounce-in-top infinite ;
+            }
+        }
+
+        .center {
+            max-width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+
+        .info {
+           
+            font-size: 20px;
+            font-family: mediam;
+            font-weight: 600;
+
+            span {
+               font-family: boldd;
+                color: #000;
+            }
+
+        }
+    }
+
+}
+
+@keyframes bounce-in-top {
+    0% {
+      transform: translateY(-25px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-20px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-15px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-4px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+  }
+  @keyframes moving {
+    0% {
+      background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-x: 2000px;
+    }
+  }

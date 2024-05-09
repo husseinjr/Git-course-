@@ -1,0 +1,41 @@
+.blog{
+    position: relative;
+    // height: 1999px;
+    margin-top: 0 !important;
+.swiper {
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    height:450px;
+    overflow-y: visible;
+  }
+  .swiper-pagination-bullets{
+      display: none !important;
+  }
+  .swiper-button-next ,.swiper-button-prev{
+  position: absolute !important;
+  color: var(--main-color);
+  top: unset;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  z-index: 666000099 !important;
+  border: 1px solid var(--main-color);
+  right: calc(49% - 55px) !important;
+  border-radius: 10px;
+  transition: .8s;
+
+  }
+  .swiper-button-next:hover ,.swiper-button-prev:hover{
+      background-color: var(--main-color);
+      color: var(--secondery-color);
+  }
+  .swiper-button-next {
+      right:50%  !important;
+  }
+  .swiper-button-prev{
+      left: 50%  !important;
+      
+  }
+
+}

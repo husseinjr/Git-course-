@@ -1,0 +1,98 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+
+   &::selection{
+       background-color: var(--main-color);
+       color: #fff; 
+   }
+   
+   &::-webkit-scrollbar {
+       width: 8px;
+   }
+
+   &::-webkit-scrollbar-track {
+       background-color: var(--dark-color);
+   }
+   
+   &::-webkit-scrollbar-thumb {
+       background: linear-gradient(180deg, #D23534, #000); 
+       border-radius: 8px;
+   }
+
+   &::-webkit-scrollbar-thumb:hover {
+       background: linear-gradient(180deg, #000, #D23534);
+   }
+}
+
+body{
+   scroll-behavior: smooth;
+   direction: rtl;
+}
+:root{
+   --main-color:#D23534;
+   --light-color:#F9F7F7;
+   --secondery-color:#C4A381;
+   --txtgrey-color :#1312121A;
+   --cart-color:#ffecec;
+}
+@font-face {
+   font-family:mediam ;
+   src: url(../../Fonts/ge-dinkum-light-bold.ttf);
+}
+
+@font-face {
+   font-family:boldd ;
+   src: url(../../Fonts/GEDinkum-Bold-1.ttf);
+}
+ul,li{
+   list-style: none;
+}
+.root{
+   position: relative;
+}
+@mixin btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px 15px;
+   background-color: #f64b4b;
+   color:#FFF;
+   font-family: mediam;
+   border: none;
+   border-radius: 5px
+}
+ @mixin btn-hover{
+   background-color: #f64b4b !important;
+   color: #F9F7F7 !important;
+   transition: .7s !important;
+   transform: translateY(-2px) !important;
+}
+@mixin title{
+   margin: 20px  0;
+   background-color: var(--light-color);
+   width: 100%;
+   .dep_title{
+       margin-right: 30px;
+       font-size: 22px;
+       font-family: boldd;
+       color: var(--main-color);
+       border-right: 5px solid var(--main-color);
+       
+       h2{
+           padding-right: 10px;
+       }
+   }
+}
+@import "./landingg-page/navbar";
+@import "./landingg-page/mianSwipperSec";
+@import "./landingg-page/departments";
+// @import "./landingg-page/dep_Info";
+@import "./landingg-page/swiperCard";
+@import "./landingg-page/cards";
+@import "./shoppingCart";
+@import "./proudacts";
+@import "./contactus/contactus";
+@import "./whoWeAre/whoWeAre";
+@import "./footer";

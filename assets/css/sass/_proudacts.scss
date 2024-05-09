@@ -1,0 +1,24 @@
+.proudacts{
+    background-color: var(--cart-color);
+    margin-top: 72px;
+}
+.pattertn{
+    background-image: url(../../img/pattern.png);
+    background-size: cover;
+    background-repeat: repeat;
+    // width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    animation: moving 30s linear infinite ;;
+    overflow: auto;
+   
+}
+@keyframes moving {
+    0% {
+      background-position-x: 0px;
+    }
+  
+    100% {
+      background-position-x: 2000px;
+    }
+  }
